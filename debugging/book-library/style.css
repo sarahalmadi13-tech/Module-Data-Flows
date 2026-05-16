@@ -1,19 +1,115 @@
-.form-group {
-  width: 400px;
-  height: 300px;
-  align-self: left;
-  padding-left: 20px;
+/* Global */
+body {
+  background: #0d0f17;
+  font-family: "Orbitron", sans-serif;
+  color: #e0e0e0;
+  padding-bottom: 40px;
 }
 
-.btn {
-  display: block;
+/* Header */
+.jumbotron {
+  background: linear-gradient(135deg, #1f2333, #0d0f17);
+  color: #76e3ff;
+  border-radius: 10px;
+  padding: 2rem 1rem;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.15);
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
-.form-check-label {
-  padding-left: 20px;
-  margin: 5px 0px 5px 0px;
-}
-
+/* Add new book button */
 button.btn-info {
-  margin: 20px;
+  background: #1e90ff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin: 20px 0;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 0 10px rgba(30, 144, 255, 0.5);
+}
+
+button.btn-info:hover {
+  background: #0b6edc;
+  box-shadow: 0 0 15px rgba(30, 144, 255, 0.8);
+}
+
+/* Form card */
+#demo .form-group {
+  background: #161a25;
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+  max-width: 450px;
+  border: 1px solid #2a2f40;
+}
+
+/* Inputs */
+input.form-control {
+  background: #0d0f17;
+  border: 1px solid #2a2f40;
+  color: #76e3ff;
+  border-radius: 6px;
+}
+
+input.form-control:focus {
+  border-color: #1e90ff;
+  box-shadow: 0 0 6px rgba(30, 144, 255, 0.6);
+}
+
+/* Submit button */
+.btn-primary {
+  background: #1e90ff;
+  border: none;
+  margin-top: 10px;
+  color: white;
+  box-shadow: 0 0 10px rgba(30, 144, 255, 0.5);
+}
+
+.btn-primary:hover {
+  background: #0b6edc;
+}
+
+/* Table */
+.table {
+  background: #161a25;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+  margin-top: 20px;
+  border: 1px solid #2a2f40;
+}
+
+.thead-dark {
+  background: #1e90ff !important;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Read button */
+.btn-success {
+  background: #00c896;
+  border: none;
+  color: #0d0f17;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0, 200, 150, 0.4);
+}
+
+.btn-success:hover {
+  background: #00a87d;
+}
+
+/* Delete button */
+.btn-warning {
+  background: #ff4f4f;
+  border: none;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(255, 79, 79, 0.4);
+}
+
+.btn-warning:hover {
+  background: #d63c3c;
 }
