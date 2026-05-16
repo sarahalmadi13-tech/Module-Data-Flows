@@ -28,18 +28,19 @@
     </button>
 
     <div id="demo" class="collapse">
-      <div class="form-group">
-        <label for="title">Title:</label>
-        <input
-          type="title"
-          class="form-control"
+      <form id="bookForm" onsubmit="addBook(); return false;">
+        <div class="form-group">
+          <label for="title">Title:</label>
+          <input
+            type="text"
+            class="form-control"
           id="title"
           name="title"
           required
         />
         <label for="author">Author: </label>
         <input
-          type="author"
+          type="text"
           class="form-control"
           id="author"
           name="author"
@@ -55,20 +56,17 @@
         />
         <label class="form-check-label">
           <input
-            type="checkbox"
-            class="form-check-input"
-            id="check"
-            value=""
-          />Read
+            type="checkbox" id="check" value="read">
+          Read
         </label>
         <input
           type="submit"
           value="Submit"
           class="btn btn-primary"
-          onclick="submit();"
+          onclick="addBook();"
         />
       </div>
-    </div>
+    </form>
 
     <table class="table" id="display">
       <thead class="thead-dark">
@@ -80,15 +78,7 @@
           <th></th>
         </tr>
       </thead>
-      <tbody>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-      </tbody>
+      
     </table>
 
     <script src="script.js"></script>
