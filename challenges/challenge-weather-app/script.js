@@ -1,8 +1,8 @@
 // =======================
 // API KEYS
 // =======================
-const OPENWEATHER_KEY = "YOUR_KEY_HERE";
-const UNSPLASH_KEY = "YOUR_KEY_HERE";
+const OPENWEATHER_KEY = "your_real_openweather_key_here";
+const UNSPLASH_KEY = "your_real_unsplash_key_here";
 
 // =======================
 // FETCH WEATHER
@@ -55,7 +55,7 @@ function displayImages(images) {
   document.getElementById("credit-user").href = images[0].user.links.html;
 
   // THUMBNAILS
-  images.forEach((img) => {
+  images.forEach((img, index) => {
     const thumb = document.createElement("img");
     thumb.src = img.urls.thumb;
     thumb.classList.add("thumb");
