@@ -1,7 +1,5 @@
-
 function exampleFunction() {
-return true
+  return true;
 }
 
-export default exampleFunction;
-
+module.exports = exampleFunction;
